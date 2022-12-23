@@ -1,0 +1,23 @@
+.root {
+BG_LIGHT: #ffffff;
+}
+.chart-plot-background {
+-fx-background-color: transparent;
+}
+
+.default-color0.chart-series-line {
+-fx-stroke: blue;
+}
+
+.default-color0.chart-line-symbol {
+-fx-background-color: blue, white;
+}
+
+.bg-light {
+-fx-background-color: #fff;
+}
+
+.dialog-light {
+-fx-background-radius: 2%;
+-fx-background-color: BG_LIGHT;
+}

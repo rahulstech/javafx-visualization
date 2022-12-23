@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="624.0" styleClass="dialog-light" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rahulstech.javafx.visualization.javafxvisualization.controller.FilterController">
+   <children>
+      <Label layoutX="30.0" layoutY="126.0" styleClass="lead" text="Group By" />
+      <ComboBox fx:id="groupBy" layoutX="144.0" layoutY="121.0" prefWidth="150.0" styleClass="btn-sm" />
+      <CheckBox fx:id="choiceExpense" layoutX="373.0" layoutY="126.0" mnemonicParsing="false" styleClass="lead" text="Expense" />
+      <CheckBox fx:id="choiceIncome" layoutX="509.0" layoutY="127.0" mnemonicParsing="false" styleClass="lead" text="Income" />
+      <Label layoutX="328.0" layoutY="190.0" styleClass="lead" text="Filter Person" />
+      <Label layoutX="30.0" layoutY="190.0" styleClass="lead" text="Filter Account" />
+      <ComboBox fx:id="filterAccount" layoutX="144.0" layoutY="185.0" prefWidth="150.0" styleClass="btn-sm" />
+      <ComboBox fx:id="filterPerson" layoutX="442.0" layoutY="185.0" prefWidth="150.0" styleClass="btn-sm" />
+      <Label layoutX="30.0" layoutY="254.0" styleClass="lead" text="Date Start" />
+      <Label layoutX="328.0" layoutY="254.0" styleClass="lead" text="Date End" />
+      <Label layoutX="215.0" layoutY="30.0" text="Filter Options">
+         <styleClass>
+            <String fx:value="h2" />
+            <String fx:value="strong" />
+         </styleClass>
+      </Label>
+      <Button layoutX="504.0" layoutY="335.0" mnemonicParsing="false" onAction="#onClickFilter" text="Filter">
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="btn-success" />
+         </styleClass>
+      </Button>
+      <Button layoutX="419.0" layoutY="335.0" mnemonicParsing="false" onAction="#onClickCancel" styleClass="btn" text="Cancel" />
+      <DatePicker fx:id="dateStartPicker" editable="false" layoutX="144.0" layoutY="252.0" prefHeight="23.0" prefWidth="150.0" />
+      <DatePicker fx:id="dateEndPicker" editable="false" layoutX="442.0" layoutY="252.0" prefHeight="23.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
